@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./../css/budget.css">
+    <title>PixelArte</title>
+</head>
+<body>
+    <header class="header">
+        <div class="menu">
+            <div class="logo">
+                <img src="./../images/logo.png" class="icono-logo" alt="logo">
+                <p class="name-logo">PixelArte</p>
+            </div>
+            <input type="checkbox" id="menu">
+            <label for="menu"><img src="./../images/menu.png" class="menu-icono" alt=""></label>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="./../index.html">inicio</a></li>
+                    <li><a href="./products.html">productos</a></li>
+                    <li><a href="./budget.html">presupuesto</a></li>
+                    <li><a href="./contact.html">contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="formulario">
+        <h3>Pide tu presupuesto</h3>
+        <div class="formulario-content">
+            <form action="#" method="get">
+                <div class="nombre">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre">
+                </div>
+                <div class="email">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email">
+                </div>
+                <div class="telefono">
+                    <label for="telefono">Teléfono</label>
+                    <input type="tel" id="telefono" name="telefono">
+                </div>
+                <div class="observaciones">
+                    <label for="observaciones">Observaviones</label>
+                    <textarea name="observaciones" id="observaciones" cols="30" rows="5"></textarea>
+                </div>
+                <div class="politica">
+                    <input type="checkbox" id="politica" name="politica"> 
+                    <label for="politica">Acepta la politica de privacidad</label>
+                </div>
+            </form>
+            <button type="submit">Enviar</button>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="social-media">
+            <img src="./../images/facebook.png" alt="facebook">
+            <img src="./../images/instagram.png" alt="instagram">
+            <img src="./../images/youtube.png" alt="youtube">
+        </div>
+        <p>Copyright Copyright</p>
+    </footer>
+</body>
+</html>

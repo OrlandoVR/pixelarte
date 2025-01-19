@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:wght@400;600;800&display=swap');
+
+:root {
+    --black: #000000;
+    --white: #ffffff;
+    --orange1: #FFB474;
+    --orange2: #924300;
+    --orange3: #303030;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Inter', serif;
+}
+
+body {
+    overflow-x: hidden;
+    font-family: 'Inter', serif;
+    color: var(--black);
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 15px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    font-size: 25px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+#menu {
+    display: none;
+}
+
+.menu label img {
+    width: 50px;
+    cursor: pointer;
+}
+
+.menu label {
+    display: none;
+}
+
+.icono-logo {
+    width: 50px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.navbar ul li a {
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 500;
+    color: black;
+}
+
+.navbar ul li a:hover {
+    color: var(--orange2);
+    border-bottom: 3px solid var(--orange2);
+}
+
+/* formulario */
+.formulario {
+    background-color: var(--orange1);
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.formulario h3 {
+    text-transform: uppercase;
+    color: var(--white);
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.formulario-content {
+    min-width: 800px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.formulario-content form {
+    width: 100%;
+    display: contents;
+}
+
+.formulario-content form div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.formulario-content form div label {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.formulario-content form div input,
+.formulario-content form div textarea {
+    padding: 10px;
+    border: 1px solid var(--black);
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #f5f5f5;
+}
+
+.politica {
+    grid-column: span 2;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.politica label {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+button {
+    grid-column: span 2;
+    width: 150px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--orange2);
+    color: var(--white);
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    margin: 0 auto;
+}
+
+button:hover {
+    background-color: var(--orange3);
+}
+
+/* footer */
+
+.footer {
+    background-color: var(--black);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    padding: 15px 0;
+}
+
+.footer p {
+    color: var(--white);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.social-media{
+    display: flex;
+    gap: 30px;
+}
+
+.social-media img {
+    width: 40px;
+    height: 40px;
+}
+
+@media only screen and (max-width: 768px){
+    .products-list{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+    }
+
+    .menu label {
+        display: initial;
+    }
+
+    .menu .navbar {
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 74px;
+        background-color: var(--orange3);
+        display: none;
+    }
+
+    .menu .navbar ul{
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .menu .navbar ul li{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .menu .navbar ul li a{
+        padding: 10px 0;
+        border: none;
+        color: var(--white);
+    }
+
+    .menu .navbar ul li:hover{
+        background-color: #FFB474;
+        cursor: pointer;
+    }
+
+    .menu .navbar ul li a:hover{
+        color: black;
+    }
+
+    #menu:checked ~ .navbar {
+        display: initial;
+    }
+
+    .formulario-content {
+        min-width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .formulario-content form .politica {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .formulario-content form div {
+        width: 100%;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    .politica {
+        display: flex;
+        flex-direction: row;
+    }
+}
