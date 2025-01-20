@@ -173,8 +173,7 @@ button:hover {
     background-color: var(--black);
     display: flex;
     align-items: center;
-    justify-content: center;
-    flex-direction: column;
+    justify-content: space-between;
     gap: 20px;
     padding: 15px 0;
 }
@@ -271,5 +270,10 @@ button:hover {
     .politica {
         display: flex;
         flex-direction: row;
+    }
+    
+    .footer {
+        text-align: center;
+        flex-direction: column;
     }
 }

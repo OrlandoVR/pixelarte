@@ -147,8 +147,7 @@ body {
     background-color: var(--black);
     display: flex;
     align-items: center;
-    justify-content: center;
-    flex-direction: column;
+    justify-content: space-between;
     gap: 20px;
     padding: 15px 0;
 }
@@ -219,6 +218,11 @@ body {
 
     #menu:checked ~ .navbar {
         display: initial;
+    }
+
+    .footer {
+        text-align: center;
+        flex-direction: column;
     }
 }
 
