@@ -30,29 +30,30 @@
     <section class="formulario">
         <h3>Pide tu presupuesto</h3>
         <div class="formulario-content">
-            <form action="#" method="get">
+            <form action="./../index.html" method="get">
                 <div class="nombre">
                     <label for="nombre">Nombre</label>
-                    <input type="text" id="nombre" name="nombre">
+                    <input type="text" id="nombre" name="nombre" pattern="[a-zA-Z]+" title="El nombre solo puede contener letras y espacios" required>
                 </div>
                 <div class="email">
                     <label for="email">Email</label>
-                    <input type="email" name="email" id="email">
+                    <input type="email" name="email" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Introducir un correo valido (ejemplo usuario@dominio.com)" required>
                 </div>
                 <div class="telefono">
                     <label for="telefono">Teléfono</label>
-                    <input type="tel" id="telefono" name="telefono">
+                    <input type="tel" pattern="\d{9}" id="telefono" name="telefono" title="El telefono debe tener exactamente 9 digitos" required>
                 </div>
                 <div class="observaciones">
                     <label for="observaciones">Observaviones</label>
-                    <textarea name="observaciones" id="observaciones" cols="30" rows="5"></textarea>
+                    <textarea name="observaciones" id="observaciones" cols="30" rows="5" title="Las observaciones pueden contener letras y numeros" required></textarea>
                 </div>
                 <div class="politica">
-                    <input type="checkbox" id="politica" name="politica"> 
+                    <input type="checkbox" id="politica" name="politica" required> 
                     <label for="politica">Acepta la politica de privacidad</label>
                 </div>
+                <button type="submit">Enviar</button>
             </form>
-            <button type="submit">Enviar</button>
+            
         </div>
     </section>
 
