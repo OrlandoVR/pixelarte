@@ -75,9 +75,13 @@ body {
     color: black;
 }
 
-.navbar ul li a:hover {
+.navbar ul li a:hover{
     color: var(--orange2);
     border-bottom: 3px solid var(--orange2);
+}
+
+.navbar ul li a.current{
+    color: var(--orange2);
 }
 
 /* contacto */
